@@ -42,7 +42,33 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Buttons */
+
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color)
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white
+}
+
 /* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
@@ -52,11 +78,13 @@ h2 {
 }
 
 /* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
 
 /* Services */
+
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
@@ -96,10 +124,10 @@ h2 {
     margin-right: 15px;
 }
 
-#contact .social-links {
+#contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
-    transition: color 0.3s ease-in-out
+    transition: color 0.3s ease-in-out;
 }
 
 #contact .social-links i:hover {
@@ -140,19 +168,18 @@ h2 {
     }
 }
 
-/* Extra large devices (small laptops, 1200px and up) */
+/* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    /* Make all service cards the same height for consistency */
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
     }
 }
 
-/* Extra extra large devices (small laptops, 1400px and up) */
+/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-    /* Make all service cards the same height for consistency */
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
     }
 }
-
